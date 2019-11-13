@@ -1,0 +1,18 @@
+/* styles.css */
+h1 {
+    color: green;
+    text-align: center
+}
+
+h2 {
+    color: blue;
+    background-color: gray;
+}
+
+table {
+    box-shadow: 2px 2px 5px gray;
+}
+
+img {
+    box-shadow: 2px 2px 5px gray;
+}

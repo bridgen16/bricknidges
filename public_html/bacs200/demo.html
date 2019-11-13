@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skill Demonstration: Accordion</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<h1>Skill Demonstration: Accordion</h1>
+
+<button class="accordion">Step 1</button>
+<div class="panel">
+
+    <p>I was the only person to complete the teach a skill in my group.</p>
+</div>
+
+<button class="accordion">Step 2</button>
+<div class="panel">
+
+
+    <p>Here is the skill i learned from the lesson.</p>
+</div>
+
+<button class="accordion">Step 3</button>
+<div class="panel">
+
+
+    <p>This is helpful for compressing lots of data and text into a tab to open and close. </p>
+</div>
+
+<style>
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+</style>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+
+</script>

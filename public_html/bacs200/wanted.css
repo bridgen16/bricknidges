@@ -1,0 +1,40 @@
+/* styles.css */
+body {
+    font-family: inherit;
+    font-size: 24px;
+    text-align: center;
+    background-image: url("http://www.seekgif.com/uploads/wanted-poster-for-cowboy-party-0.jpeg");
+}
+
+.main {
+    border: 1px solid;
+    border-color: black;
+    box-shadow: 5px 5px;
+    align-content: center;
+    width: 80%;
+    max-width: 800px;
+    margin-left: 190px;
+    padding: 500px 10px;
+    margin-left: 190px;
+    padding: 10px 10px
+}
+
+img {
+    border: 10px solid black;
+}
+
+header {
+    background-color: sandybrown;
+    color: black dropshadow: 5px
+}
+
+.sidebar {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    padding-top: 20px;
+    border: 1px solid black;
+    box-shadow: 6px 6px;
+    align-content: center;
+
+}

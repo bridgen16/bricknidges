@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>W3Schools Accordion lesson</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="teach.css">
+</head>
+<h1>W3Schools Accordion lesson </h1>
+
+<button class="accordion">Step 1</button>
+<div class="panel">
+
+    <p><img src="/bacs200/teachhtml.png" alt="html" width=500></p>
+
+    <p>The first step is to inster this code into your html. Once you do this you can insert what content you want to be seen when you click the dropdown.</p>
+</div>
+
+<button class="accordion">Step 2</button>
+<div class="panel">
+
+    <p><img src="/bacs200/teachcss.png" alt="CSS" width=500></p>
+
+    <p>Next, you can style your buttons for the dropdown with this code right here. Personally I used the style supported by bootstrap.</p>
+</div>
+
+<button class="accordion">Step 3</button>
+<div class="panel">
+
+    <p><img src="/bacs200/teachjava.png" alt="java" width=500></p>
+
+    <p>Lastly, you'll need to add this script code as well. There are other scripts on the website that do dropdowns that go different directions and do different things. You can use different scripts to accomodate your code better.</p>
+</div>
+
+<style>
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+</style>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+
+</script>
